@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Demo Service</title>
+    </head>
+    <body>
+    	<h1>You have been logged out.</h1>
+        <h1>This is a Public Home Page of Service Provider App</h1>
+        <p>
+        	<a th:href="@{/member}">Go to Protected Service Page</a>
+        </p>
+    </body>
+</html>
