@@ -1,10 +1,9 @@
-package com.demo.sales.member.service;
+package com.anthem.services.member.service;
 
 import java.math.BigInteger;
 import java.net.URI;
 import java.util.Date;
 
-import javax.annotation.Nonnull;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -22,11 +21,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.demo.sales.member.exception.ResourceNotFoundException;
-import com.demo.sales.member.model.Member;
-import com.demo.sales.member.repository.MemberRepository;
-import com.demo.sales.member.repository.MongoSequenceRepository;
-import com.demo.sales.member.util.PageResource;
+import com.anthem.services.member.exception.ResourceNotFoundException;
+import com.anthem.services.member.model.Member;
+import com.anthem.services.member.repository.MemberRepository;
+import com.anthem.services.member.repository.MongoSequenceRepository;
 
 @RestController
 @RequestMapping("/member")
@@ -57,7 +55,7 @@ public class MemberService {
 	}
 	
 	@RequestMapping(value = "/all", method = RequestMethod.GET)
-	public PageResource<Member> getAllMembersByPage(Pageable pageable) {
+	public Page<Member> getAllMembersByPage(Pageable pageable) {
 
 		Page<Member> memberList = memberRepository.findAll(pageable);
 
@@ -67,14 +65,14 @@ public class MemberService {
 		}
 		
 		
-		return new PageResource<Member>(memberList,"page","size");
+		return memberList;
 		
 
 	}
 
 	@RequestMapping(value = "/desc/{desc}", method = RequestMethod.GET)
 	public ResponseEntity<Page<Member>> getMembersByDesc(
-			@Valid @Nonnull @PathVariable String desc,Pageable pageable) {
+			 @PathVariable String desc,Pageable pageable) {
 
 		
 		Page<Member> memberList = memberRepository.findByDesc(desc,pageable);

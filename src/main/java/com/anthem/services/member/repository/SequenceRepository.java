@@ -1,14 +1,8 @@
-package com.demo.sales.member.repository;
+package com.anthem.services.member.repository;
 
 import org.springframework.data.repository.Repository;
 
-import com.demo.sales.member.model.Sequence;
+import com.anthem.services.member.model.Sequence;
 
 public interface SequenceRepository extends Repository<Sequence, String> {
-
-	
-	
-	
-	
-	
 }

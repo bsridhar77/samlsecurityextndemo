@@ -1,21 +1,17 @@
-package com.demo.sales.member;
+package com.anthem.services.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.anthem.pos.websecurity.WebSecurityConfig;
-
 @Controller
 @SpringBootApplication
-@Import({WebSecurityConfig.class})
-public class SalesApplication {
+public class BrokerPOSMemberApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SalesApplication.class, args);
+        SpringApplication.run(BrokerPOSMemberApplication.class, args);
     }
     
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -23,5 +19,4 @@ public class SalesApplication {
         return "index";
     }
     
-   
 }

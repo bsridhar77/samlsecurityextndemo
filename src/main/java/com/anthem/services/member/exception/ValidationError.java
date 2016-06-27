@@ -1,4 +1,4 @@
-package com.demo.sales.member.exception;
+package com.anthem.services.member.exception;
 
 public class ValidationError {
 	private String code;

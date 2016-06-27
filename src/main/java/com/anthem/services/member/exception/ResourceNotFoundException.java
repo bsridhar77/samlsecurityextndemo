@@ -1,4 +1,4 @@
-package com.demo.sales.member.exception;
+package com.anthem.services.member.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

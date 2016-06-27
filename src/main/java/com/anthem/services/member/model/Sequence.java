@@ -1,4 +1,4 @@
-package com.demo.sales.member.model;
+package com.anthem.services.member.model;
 
 import java.math.BigInteger;
 

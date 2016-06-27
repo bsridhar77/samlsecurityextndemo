@@ -1,4 +1,4 @@
-package com.demo.sales.member.exception;
+package com.anthem.services.member.exception;
 
 import java.util.ArrayList;
 import java.util.Date;
