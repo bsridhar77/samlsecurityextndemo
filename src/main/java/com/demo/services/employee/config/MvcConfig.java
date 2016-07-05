@@ -1,4 +1,4 @@
-package com.anthem.services.member.config;
+package com.demo.services.employee.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
