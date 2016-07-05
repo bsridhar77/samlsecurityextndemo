@@ -11,7 +11,7 @@ To start the secured Spring boot app with the secured profile, we can use,
 d:\test>java -jar employee-0.0.1-SNAPSHOT.jar --spring.profiles.active=secured
 
 
-In the com.demo.services.employee.config.WebSecurityConfig Class,
+In the com.demo.services.employee.config.WebSecurityConfig Class (https://github.com/bsridhar77/samlsecurityextndemo/blob/master/src/main/java/com/demo/services/employee/config/WebSecurityConfig.java),
 line number: 520, has the code to make the session creation policy stateless.
 
 With that line commented out, If I run the App with secured profile it successfully authenticates with
