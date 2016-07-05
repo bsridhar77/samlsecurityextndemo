@@ -13,7 +13,10 @@ idpType=okta.xml
 entityId=urn:test:member:readyuser
 
 
+The credentials to use to login for each of the IdP's (SSOCirlce and okta) 
+are also provided in application-secured.properties (https://github.com/bsridhar77/samlsecurityextndemo/blob/master/src/main/resources/application-secured.properties)
 
+Please provide the same when you are challenged with the login page of the selected IdP.
 
 
 To start the unsecured Spring boot app, we can use as below(OR) run directly from with STS/Eclipse IDE
