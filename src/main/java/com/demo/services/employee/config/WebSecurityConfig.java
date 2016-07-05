@@ -517,7 +517,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .httpBasic()
                 .authenticationEntryPoint(samlEntryPoint());
         
-        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        /*http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);*/
         http
         	.csrf()
         		.disable();
