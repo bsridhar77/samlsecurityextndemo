@@ -22,9 +22,20 @@ Please provide the same when you are challenged with the login page of the selec
 To start the unsecured Spring boot app, we can use as below(OR) run directly from with STS/Eclipse IDE
 d:\test>java -jar employee-0.0.1-SNAPSHOT.jar
 
+To navigate, access , http://localhost:4080/employee , from REST client or directly from browser.
+The Service displays hard-coded JSON result of employee records from service method.
+
 
 To start the secured Spring boot app with the secured profile, we can use as below (OR) run directly from with STS/Eclipse IDE
 d:\test>java -jar employee-0.0.1-SNAPSHOT.jar --spring.profiles.active=secured
+
+To navigate, access , http://localhost:4080/employee , from REST client or directly from browser.
+
+For Local signout, use, http://localhost:4080/saml/logout?local=true
+
+The port is also configured in application-secured.properties and application.properties.
+
+
 
 
 In the com.demo.services.employee.config.WebSecurityConfig Class (https://github.com/bsridhar77/samlsecurityextndemo/blob/master/src/main/java/com/demo/services/employee/config/WebSecurityConfig.java),
