@@ -13,6 +13,8 @@ idpType=okta.xml
 entityId=urn:test:member:readyuser
 
 
+ss
+
 
 To start the Spring boot app, we can use as below(OR) run directly from with STS/Eclipse IDE
 d:\test>java -jar employee-0.0.1-SNAPSHOT.jar
